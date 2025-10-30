@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <img src="./assets/logo JMA.png" alt="Logo de mi app" class="logo">
+
+    <h1>Aplicacion de Tareas</h1>
+
+     <form action="#" id="inputUsuario">
+        <input type="text" placeholder="Escribe tu tarea aqui..." autofocus>
+        <input type="submit" value="+" id="btnAgregar"> <!-- el formulario siempre trabaja con un SUBMIT, ya que el formulario captura la info mediante submit -->
+     </form><!--forM usamoscuando se configura para interactuar con una BD, si no hay BD, entonces dejamos con un # -->
+
+     <div id="lista" class="contenedor-lista">
+        <div class="contenedor-tarea" id="1">
+            <label>
+                <input type="checkbox">
+                Tarea 1
+            </label>
+            <img src="./assets/tacho.png" alt="eliminar" class="btnEliminar">
+        </div>
+     </div>
+
+     <div id="stats">
+        Tareas pendienes: 5 Completadas 3
+     </div>
+
+     <script src="./js/scripts.js"></script>
+</body>
+</html>
